@@ -1,0 +1,255 @@
+:root {
+  --warnabg: #192b2d;
+  --warna1: #226675;
+  --warnaJudul: #77d7d7;
+}
+#login-box {
+  width: 500px;
+  height: auto;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+  padding: 0 40px 100px 40px;
+}
+#react-root,
+article,
+div,
+footer,
+header,
+main,
+nav,
+section {
+  position: relative;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: var(--warna1);
+}
+
+.App-logo {
+  height: 60px;
+  width: 60px;
+  pointer-events: none;
+  border: 0;
+  padding: 0;
+}
+td.logo-td {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  height: 288px;
+  width: 200px;
+  display: flex;
+  position: relative;
+  color: white;
+  margin: 0 1rem 1rem;
+  border: solid 0 #bdbdbd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container {
+  background-color: var(--warnabg);
+}
+a > img.gambar {
+  height: 115.06px;
+  width: 200px;
+}
+.gambar {
+  height: auto;
+  width: 200px;
+  object-fit: contain;
+  position: Absolute;
+  top: 0px;
+}
+.isi {
+  height: 6.6em;
+  background: linear-gradient(-45deg, #3b2e5a, #9477d7);
+  text-align: left;
+  padding: 0.5em 0.5em;
+  position: absolute;
+  bottom: 0px;
+}
+.judul {
+  font-size: 0.7em;
+  width: auto;
+}
+.konten {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+.sumber {
+  font-size: 0.5em;
+  font-weight: bold;
+  position: absolute;
+  color: var(--warnaJudul);
+  bottom: 0;
+}
+.tombol {
+  color: #8f44fd;
+  height: 112px;
+  width: 50%;
+  font-size: 100%;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-decoration: upright;
+  background-color: #2f1653;
+  border-radius: 8px;
+  /* margin: 4px; */
+  padding: 4px;
+}
+.title {
+  color: var(--warnaJudul);
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.waktu {
+  font-size: 0.4em;
+  margin: 0;
+  bottom: 0;
+}
+a:active,
+a:visited {
+  color: #3bb0ca;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #1b525e;
+}
+
+body {
+  margin: 0;
+  font-family: KlavikaWebCondensed, "Arial Narrow", Arial, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", */
+  /* "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", */
+  /* sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--warnabg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+  color: #233a40;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 400px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid var(--warna1);
+  color: var(--warna1);
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: var(--warna1);
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes App-logo-spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes App-logo-spinX {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
